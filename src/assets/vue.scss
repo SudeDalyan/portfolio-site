@@ -1,0 +1,222 @@
+@import 'node_modules/bootstrap/scss/bootstrap.scss';
+@import 'node_modules/bootstrap-vue/src/index.scss';
+
+$body-color: #eeebdd;
+$body-black: #1b1717;
+$body-red1: #ce1212;
+$body-red2: #810000;
+
+/* header */
+.header {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: white;
+    box-shadow: 1px 1px 20px 0 $body-black;
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+
+    .navbar-item {
+        color: $body-black;
+        font-weight: bold;
+        position: relative;
+    }
+
+    .navbar-item:before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 4px;
+        bottom: 0;
+        left: 0;
+        background-color: $body-red1;
+        visibility: hidden;
+        transform: scaleX(0);
+        transition: all 0.4s ease-in-out;
+    }
+
+    .navbar-item:hover:before {
+        visibility: visible;
+        transform: scaleX(1);
+        width: 100%;
+    }
+
+    .navbar-logo {
+        width: 70px;
+        display: block;
+        float: left;
+        margin: 10px;
+        text-decoration: none;
+    }
+
+    li {
+        a {
+            display: block;
+            border-right: 2px solid white;
+            text-transform: uppercase;
+            text-decoration: none;
+            letter-spacing: 0.15em;
+            position: relative;
+            margin: 20px 50px 0px 50px;
+        }
+
+        .fa {
+            padding: 6px;
+            font-size: 20px;
+            width: 35px;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 50%;
+            background-color: $body-red1;
+            color: white;
+        }
+
+        .fa:hover {
+            background-color: $body-black;
+            color: white;
+        }
+    }
+
+    .social-media {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        overflow: hidden;
+        background-color: white;
+        text-decoration: none;
+
+        li {
+            a {
+                display: block;
+                border-right: 2px solid white;
+                text-transform: uppercase;
+                text-decoration: none;
+                letter-spacing: 0.15em;
+                position: relative;
+                margin: 20px 0px 0px 20px;
+            }
+        }
+    }
+
+    .menu {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        overflow: hidden;
+        background-color: white;
+        margin: 5px;
+        clear: both;
+        max-height: 0;
+        transition: max-height .2s ease-out;
+        margin-right: 100px;
+    }
+
+    .menu-icon {
+        cursor: pointer;
+        display: inline-block;
+        float: right;
+        padding: 28px 20px;
+        position: relative;
+        user-select: none;
+        margin: 10px;
+
+        .navicon {
+            background: #333;
+            display: block;
+            height: 2px;
+            position: relative;
+            transition: background .2s ease-out;
+            width: 18px;
+        }
+
+        .navicon:before,
+        .navicon:after {
+            background: #333;
+            content: '';
+            display: block;
+            height: 100%;
+            position: absolute;
+            transition: all .2s ease-out;
+            width: 100%;
+        }
+
+        .navicon:before {
+            top: 5px;
+        }
+
+        .navicon:after {
+            top: -5px;
+        }
+    }
+
+    .menu-btn {
+        display: none;
+    }
+
+    .menu-btn:checked~.menu {
+        max-height: 280px;
+    }
+
+    .menu-btn:checked~.menu-icon .navicon {
+        background: transparent;
+    }
+
+    .menu-btn:checked~.menu-icon .navicon:before {
+        transform: rotate(-45deg);
+    }
+
+    .menu-btn:checked~.menu-icon .navicon:after {
+        transform: rotate(45deg);
+    }
+
+    .menu-btn:checked~.menu-icon:not(.steps) .navicon:before,
+    .menu-btn:checked~.menu-icon:not(.steps) .navicon:after {
+        top: 0;
+    }
+}
+
+
+@media (min-width: 48em) {
+    .header {
+        .menu {
+            clear: none;
+            float: left;
+            max-height: none;
+        }
+
+        .menu-icon {
+            display: none;
+        }
+
+        li {
+            float: left;
+        }
+    }
+}
+@media (max-width:600px) {
+    .social-media {
+        display:none;
+    }
+}
+
+//header is finished
+
+//home start
+
+.home{
+    img{
+        margin-top: 200px;
+        margin-right: 50px;
+        background-color: $body-red2;
+        border-radius: 74% 26% 50% 50% / 50% 65% 35% 50%;
+        box-shadow: 1px 1px 20px 0 $body-black;
+    }
+}
+@media (max-width:600px) {
+    .home {
+        img{
+            width: 90%;
+            margin-top: 120px;
+            margin-right: 20px;
+        }
+    }
+}

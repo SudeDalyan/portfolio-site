@@ -3,12 +3,17 @@
 
 $body-color: #eeebdd;
 $body-black: #1b1717;
-$body-red1: #ce1212;
-$body-red2: #810000;
+$body-blue: #169dc2;
+$body-darkblue: #00255e;
 
+h1{
+    color: $body-black;
+}
+h2{
+    color: $body-blue;
+}
 /* header */
 .header {
-    font-family: 'Times New Roman', Times, serif;
     background-color: white;
     box-shadow: 1px 1px 20px 0 $body-black;
     position: fixed;
@@ -28,7 +33,7 @@ $body-red2: #810000;
         height: 4px;
         bottom: 0;
         left: 0;
-        background-color: $body-red1;
+        background-color: $body-blue;
         visibility: hidden;
         transform: scaleX(0);
         transition: all 0.4s ease-in-out;
@@ -66,13 +71,14 @@ $body-red2: #810000;
             text-align: center;
             text-decoration: none;
             border-radius: 50%;
-            background-color: $body-red1;
+            background-color: $body-blue;
             color: white;
         }
 
         .fa:hover {
-            background-color: $body-black;
-            color: white;
+           //
+            box-shadow: 0 3px $body-darkblue;
+            transform: translateY(2px);
         }
     }
 
@@ -80,7 +86,6 @@ $body-red2: #810000;
         margin: 0;
         padding: 0;
         list-style: none;
-        overflow: hidden;
         background-color: white;
         text-decoration: none;
 
@@ -192,31 +197,66 @@ $body-red2: #810000;
         }
     }
 }
+
 @media (max-width:600px) {
     .social-media {
-        display:none;
+        display: none;
     }
 }
 
 //header is finished
 
 //home start
-
 .home{
     img{
-        margin-top: 200px;
-        margin-right: 50px;
-        background-color: $body-red2;
-        border-radius: 74% 26% 50% 50% / 50% 65% 35% 50%;
-        box-shadow: 1px 1px 20px 0 $body-black;
+        width: 100%;
     }
-}
-@media (max-width:600px) {
-    .home {
-        img{
-            width: 90%;
-            margin-top: 120px;
-            margin-right: 20px;
+    .home-headers{
+        margin-top:120px;
+        h6{
+            opacity: 0.8;
+        }
+        #e-mail{
+            padding-right: 5em;
+        }
+        .home-buttons{
+            margin: 40px;
+            width: 20%;
+        }
+        .home-buttons:active{ 
+            box-shadow: 0 5px #333;
+            transform: translateY(3px);
+        }
+        #cv{
+            background-color: $body-blue;
+            color: white; 
+        }
+        #hire{
+            background-color: $body-black;
+            color: white;
         }
     }
+    .home-features{
+        margin-right: 70px;
+        width: 200px;
+        height: 70px;
+        font-family: 'Roboto', sans-serif;
+        font-size: 12px;
+        letter-spacing: 1.5px;
+        color: $body-black;
+        border: none;
+        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+        transition: all 0.3s ease 0s;
+        cursor: pointer;
+        outline: none;
+       padding: 0px 10px;
+    i{
+        padding-right: 15px;
+    }
 }
+.home-features:hover {
+    box-shadow: 10px 5px 20px $body-blue;
+    transform: translateY(-7px);
+  }
+}
+

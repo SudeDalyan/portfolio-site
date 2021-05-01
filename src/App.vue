@@ -40,5 +40,7 @@ div {
 .row{
 width: 100%;}
 .home{
+margin-top:75px;}
+.pages{
 margin-top:100px;}
 </style>

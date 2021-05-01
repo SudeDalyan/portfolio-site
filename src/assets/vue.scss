@@ -6,13 +6,15 @@ $body-black: #1b1717;
 $body-blue: #169dc2;
 $body-darkblue: #00255e;
 
-h1{
+h1 {
     color: $body-black;
 }
-h2{
+
+h2 {
     color: $body-blue;
 }
-/* header */
+
+//header start
 .header {
     background-color: white;
     box-shadow: 1px 1px 20px 0 $body-black;
@@ -76,7 +78,7 @@ h2{
         }
 
         .fa:hover {
-           //
+            //
             box-shadow: 0 3px $body-darkblue;
             transform: translateY(2px);
         }
@@ -113,6 +115,7 @@ h2{
         max-height: 0;
         transition: max-height .2s ease-out;
         margin-right: 100px;
+        margin-top:10px
     }
 
     .menu-icon {
@@ -204,39 +207,47 @@ h2{
     }
 }
 
-//header is finished
+//header finished
 
 //home start
-.home{
-    img{
+.home {
+    img {
         width: 100%;
     }
-    .home-headers{
-        margin-top:120px;
-        h6{
+
+    .home-headers {
+        margin-top: 120px;
+
+        h6 {
             opacity: 0.8;
         }
-        #e-mail{
+
+        #e-mail {
             padding-right: 5em;
         }
-        .home-buttons{
+
+        .home-buttons {
             margin: 40px;
             width: 20%;
         }
-        .home-buttons:active{ 
+
+        .home-buttons:active {
             box-shadow: 0 5px #333;
             transform: translateY(3px);
         }
-        #cv{
+
+        #cv {
             background-color: $body-blue;
-            color: white; 
+            color: white;
         }
-        #hire{
+
+        #hire {
             background-color: $body-black;
             color: white;
         }
     }
-    .home-features{
+
+    .home-features {
         margin-right: 70px;
         width: 200px;
         height: 70px;
@@ -249,14 +260,143 @@ h2{
         transition: all 0.3s ease 0s;
         cursor: pointer;
         outline: none;
-       padding: 0px 10px;
-    i{
-        padding-right: 15px;
+        padding: 0px 10px;
+
+        i {
+            padding-right: 15px;
+        }
+    }
+
+    .home-features:hover {
+        box-shadow: 10px 5px 20px $body-blue;
+        transform: translateY(-7px);
     }
 }
-.home-features:hover {
-    box-shadow: 10px 5px 20px $body-blue;
-    transform: translateY(-7px);
-  }
+
+@media (max-width:600px) {
+    .home {
+        margin-left: 25px;
+
+        img {
+            margin-top: 50px;
+            width: 60%;
+        }
+
+        .home-headers {
+            margin-top: 20px;
+        }
+
+        .home-contant {
+            display: none;
+        }
+
+        #cv {
+            width: 100%;
+            margin-left: 0;
+        }
+
+        #hire {
+            display: none;
+        }
+
+        .home-features {
+            display: none;
+        }
+    }
 }
 
+//home finished
+
+//pages start
+
+.pages {
+    img {
+        width: 110%;
+        margin-bottom: 100px;
+    }
+
+    .pages-content {
+        margin-top: 50px;
+    }
+
+    .pages-head {
+        border-left: 3px solid $body-darkblue;
+        margin-left: 100px;
+    }
+
+    h3 {
+        margin-right: 180px;
+    }
+
+    p {
+        text-decoration: none;
+        margin-left: 100px;
+        float: left;
+        margin-top: 30px;
+        opacity: 0.8;
+    }
+
+    h6 {
+        float: center;
+        font-weight: bold;
+        margin-left: 100px;
+    }
+
+    .social-media {
+        i {
+            background-color: $body-darkblue;
+            color: $body-color;
+            padding: 6px;
+            font-size: 20px;
+            width: 35px;
+            text-align: center;
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            position: relative;
+            margin: 20px 100px 0px 100px;
+            border-radius: 20%;
+
+            a {
+                color: $body-black;
+                margin-left: 20px;
+                letter-spacing: 0.05em;
+                text-decoration: none;
+                font-size: 15px;
+
+            }
+
+            a:hover {
+                border-bottom: 3px solid $body-blue;
+                color: $body-black;
+            }
+        }
+    }
+}
+
+@media (max-width:600px) {
+    .pages {
+        margin-top: 50px;
+        margin-left: 25px;
+
+        .pages-head {
+            margin-left: 30px;
+        }
+
+        h3 {
+            margin-right: 0px;
+        }
+
+        p {
+            margin-left: 20px;
+            margin-top: 30px;
+            opacity: 0.8;
+        }
+
+        img {
+            width: 300px;
+            margin-left: 25px;
+            margin-bottom: 20px;
+        }
+    }
+}

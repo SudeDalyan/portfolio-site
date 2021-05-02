@@ -1,8 +1,8 @@
 <template>
   <div>
     <div class="row">
-      <div class="col-md-7 pages-content">
-        <div class="pages-head">
+      <div class="col-md-7 about-content">
+        <div class="about-head">
           <h1 style="font-weight: 600;">Need Creative Writing</h1><br />
           <h3 style="font-weight: 600;">I Can Help You !</h3>
         </div>
@@ -29,7 +29,7 @@
 
 <script>
   export default {
-    name: 'Pages',
+    name: 'About',
     props: {
       msg: String
     }

@@ -14,6 +14,10 @@ h2 {
     color: $body-blue;
 }
 
+* {
+    box-sizing: border-box
+}
+
 //header start
 .header {
     background-color: white;
@@ -59,11 +63,10 @@ h2 {
         a {
             display: block;
             border-right: 2px solid white;
-            text-transform: uppercase;
             text-decoration: none;
             letter-spacing: 0.15em;
             position: relative;
-            margin: 20px 50px 0px 50px;
+            margin: 20px 40px 0px 50px
         }
 
         .fa {
@@ -75,6 +78,7 @@ h2 {
             border-radius: 50%;
             background-color: $body-blue;
             color: white;
+
         }
 
         .fa:hover {
@@ -115,7 +119,7 @@ h2 {
         max-height: 0;
         transition: max-height .2s ease-out;
         margin-right: 100px;
-        margin-top:10px
+        margin-top: 10px
     }
 
     .menu-icon {
@@ -307,19 +311,18 @@ h2 {
 
 //home finished
 
-//pages start
+//About start
 
-.pages {
+.about {
     img {
         width: 110%;
-        margin-bottom: 100px;
     }
 
-    .pages-content {
+    .about-content {
         margin-top: 50px;
     }
 
-    .pages-head {
+    .about-head {
         border-left: 3px solid $body-darkblue;
         margin-left: 100px;
     }
@@ -375,11 +378,11 @@ h2 {
 }
 
 @media (max-width:600px) {
-    .pages {
+    .about {
         margin-top: 50px;
         margin-left: 25px;
 
-        .pages-head {
+        .about-head {
             margin-left: 30px;
         }
 
@@ -400,3 +403,71 @@ h2 {
         }
     }
 }
+
+//About finished
+
+
+//Skills start
+
+.skills {
+    .skills-head {
+        border-right: 3px solid $body-blue;
+        margin-right: 50px;
+    }
+
+    p {
+        margin-right: 50px;
+    }
+
+    .skills-skills {
+        margin-right: 50px;
+        margin-bottom: 100px;
+
+        p {
+            margin-top: 10px;
+            margin-bottom: 0px;
+            color: $body-black;
+            margin-right: 500px;
+        }
+
+        .container {
+            padding-left: 0;
+            width: 100%;
+            box-shadow: 2px 1px 2px 2px $body-color;
+
+        }
+
+        .skill {
+            text-align: right;
+            color: white;
+        }
+
+        .css {
+            width: 80%;
+            background-color: $body-blue;
+        }
+
+        .js {
+            width: 90%;
+            background-color: $body-darkblue;
+        }
+
+        .php {
+            width: 75%;
+            background-color: $body-black;
+        }
+    }
+
+    .skills-content {
+        .card {
+            margin-left: 50px;
+            -webkit-box-shadow: 1px 0px 10px 0px rgba(27,23,23, 0.6);
+            -moz-box-shadow: 1px 0px 10px 0px rgba(27,23,23, 0.6);
+            box-shadow: 1px 0px 10px 0px rgba(27,23,23, 0.6);
+        }
+    }
+}
+
+
+
+//Skills finished

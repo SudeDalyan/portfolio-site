@@ -4,11 +4,11 @@
         <input class="menu-btn" type="checkbox" id="menu-btn" />
         <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
         <div class="menu">
-            <li><a href="#Home" class="navbar-item">Home</a></li>
-            <li><a href="#Pages" class="navbar-item">Pages</a></li>
-            <li><a href="#Blog" class="navbar-item">Blog</a></li>
-            <li><a href="#Portfolio" class="navbar-item">Portfolio</a></li>
-            <li><a href="#Contacts" class="navbar-item">Contacts</a></li>
+            <li><a href="#home" class="navbar-item">HOME</a></li>
+            <li><a href="#about" class="navbar-item">ABOUT</a></li>
+            <li><a href="#skills" class="navbar-item">MY SKILLS</a></li>
+            <li><a href="#portfolio" class="navbar-item">PORTFOLIO</a></li>
+            <li><a href="#contacts" class="navbar-item">CONTACTS</a></li>
         </div>
         <div class="social-media">
             <li><a href="#" class="fa fa-facebook"></a></li>

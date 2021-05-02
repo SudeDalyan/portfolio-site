@@ -1,13 +1,16 @@
 <template>
 <div class="row">
-<div class="col-12 header">
+<div class="col-12 header" id="header">
 <Header />
 </div>
-<div class="col-12 home">
+<div class="col-12 home" id="home">
   <Home/>
 </div>
-<div class="col-12 pages">
-<Pages />
+<div class="col-12 about" id="about">
+<About />
+</div>
+<div class="col-12 skills" id="skills">
+<Skills />
 </div>
 </div>
 </template>
@@ -16,7 +19,8 @@
 <script>
 import Home from './components/Home.vue'
 import Header from './components/Header.vue'
-import Pages from './components/Pages.vue'
+import About from './components/About.vue'
+import Skills from './components/Skills.vue'
 
 
 export default {
@@ -24,7 +28,8 @@ export default {
   components: {
     Home,
     Header,
-    Pages,
+    About,
+    Skills,
 
   }
 }
@@ -37,10 +42,8 @@ div {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
 }
-.row{
-width: 100%;}
-.home{
-margin-top:75px;}
-.pages{
-margin-top:100px;}
+.row{width: 100%;}
+.home{margin-top:75px;}
+.about{margin-top:100px;}
+.skills{margin-top: 100px;}
 </style>

@@ -39,7 +39,7 @@
         </div>
       </div>
 
-      <div class="col-md-6">
+      <div class="col-md-6 skills-headers">
         <div class="skills-head">
           <h1 style="font-weight: 600;">What My Writing</h1><br />
           <h3 style="font-weight: 600;">Skills Included</h3>
@@ -49,7 +49,6 @@
           plays, screenplays, teleplays, songs, and essays as well as other reports and news articles that may be of
           interest to the public. Writers' texts are published across a range of media.</p>
         <div class="skills-skills">
-
           <p>FocusWriter</p>
           <div class="container">
             <div class="skill css">80%</div>

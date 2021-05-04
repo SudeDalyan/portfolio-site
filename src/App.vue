@@ -12,6 +12,12 @@
 <div class="col-12 skills" id="skills">
 <Skills />
 </div>
+<div class="col-12 portfolio" id="portfolio">
+<Portfolio />
+</div>
+<div class="col-12 footer" id="footer">
+<Footer />
+</div>
 </div>
 </template>
 
@@ -21,6 +27,8 @@ import Home from './components/Home.vue'
 import Header from './components/Header.vue'
 import About from './components/About.vue'
 import Skills from './components/Skills.vue'
+import Portfolio from './components/Portfolio.vue'
+import Footer from './components/Footer.vue'
 
 
 export default {
@@ -30,6 +38,8 @@ export default {
     Header,
     About,
     Skills,
+    Portfolio,
+    Footer
 
   }
 }
@@ -46,4 +56,6 @@ div {
 .home{margin-top:75px;}
 .about{margin-top:100px;}
 .skills{margin-top: 100px;}
+.portfolio{margin-top: 50px;}
+.footer{margin-top: 50px;}
 </style>

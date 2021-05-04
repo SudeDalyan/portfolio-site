@@ -461,9 +461,29 @@ h2 {
     .skills-content {
         .card {
             margin-left: 50px;
-            -webkit-box-shadow: 1px 0px 10px 0px rgba(27,23,23, 0.6);
-            -moz-box-shadow: 1px 0px 10px 0px rgba(27,23,23, 0.6);
-            box-shadow: 1px 0px 10px 0px rgba(27,23,23, 0.6);
+            -webkit-box-shadow: 1px 0px 10px 0px rgba(27, 23, 23, 0.6);
+            -moz-box-shadow: 1px 0px 10px 0px rgba(27, 23, 23, 0.6);
+            box-shadow: 1px 0px 10px 0px rgba(27, 23, 23, 0.6);
+        }
+
+        img {
+            filter: grayscale(80%);
+        }
+
+        .card-title {
+            font-weight: bold;
+        }
+    }
+}
+
+@media (max-width:600px) {
+    .skills {
+        .skills-headers {
+            margin-left: 50px;
+        }
+
+        .skills-content {
+            display: none;
         }
     }
 }
@@ -471,3 +491,46 @@ h2 {
 
 
 //Skills finished
+
+//portfolio start
+
+
+
+.portfolio {
+    .carousel-item {
+        margin-left: 25px;
+    }
+
+    .portfolio-head {
+        color: $body-darkblue;
+        font-weight: bold;
+        margin-bottom: 40px;
+        text-decoration: solid;
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+    .portfolio-head:hover{
+        border-bottom: 3px solid $body-blue;
+    }
+    .btn{
+        background-color: $body-blue;
+        color: white;
+    }
+}
+@media (max-width:600px) {
+ .portfolio{
+     margin-left: 15px;
+ }       
+}
+
+
+//portfolio finished
+
+//footer start
+
+.footer{
+
+}
+
+
+//footer finished

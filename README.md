@@ -1,4 +1,4 @@
-# portfolio
+# PORTFOLIO SITE
 ![Ekran Alıntısı](https://user-images.githubusercontent.com/64406311/117038510-63c6ff80-ad10-11eb-88ba-c9e3e8ab7e3f.JPG)
 
 

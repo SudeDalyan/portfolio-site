@@ -21,7 +21,7 @@ h2 {
 //header start
 .header {
     background-color: white;
-    box-shadow: 1px 1px 20px 0 $body-black;
+    box-shadow: 1px 1px 30px 0 $body-darkblue;
     position: fixed;
     width: 100%;
     z-index: 3;
@@ -466,10 +466,6 @@ h2 {
             box-shadow: 1px 0px 10px 0px rgba(27, 23, 23, 0.6);
         }
 
-        img {
-            filter: grayscale(80%);
-        }
-
         .card-title {
             font-weight: bold;
         }
@@ -509,27 +505,69 @@ h2 {
         text-transform: uppercase;
         text-decoration: none;
     }
-    .portfolio-head:hover{
+
+    .portfolio-head:hover {
         border-bottom: 3px solid $body-blue;
     }
-    .btn{
+
+    .btn {
         background-color: $body-blue;
         color: white;
     }
 }
+
 @media (max-width:600px) {
- .portfolio{
-     margin-left: 15px;
- }       
+    .portfolio {
+        margin-left: 15px;
+    }
 }
 
 
 //portfolio finished
 
+
+//contact start
+
+.contact{
+    img{
+        width: 80%;
+        margin-top: 50px;
+    }
+    .title{
+        text-transform: uppercase;
+        color: $body-black;
+        font-weight: bold;
+    }
+}
+@media (max-width:600px) {
+    .contact {
+        margin-left: 40px;
+    }
+}
+
+//contact finished
+
 //footer start
 
-.footer{
+.footer {
+    footer {
+        width: 102%;
+    }
+}
 
+@media (max-width:600px) {
+    .footer {
+        footer {
+            width: 111%;
+        }
+
+        .container {
+            margin-left: 20px;
+        }
+        .icons{
+            margin-right: 50px;
+        }
+    }
 }
 
 

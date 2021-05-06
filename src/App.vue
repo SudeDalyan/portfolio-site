@@ -15,6 +15,9 @@
 <div class="col-12 portfolio" id="portfolio">
 <Portfolio />
 </div>
+<div class="col-12 contact" id="contact">
+<Contact />
+</div>
 <div class="col-12 footer" id="footer">
 <Footer />
 </div>
@@ -28,6 +31,7 @@ import Header from './components/Header.vue'
 import About from './components/About.vue'
 import Skills from './components/Skills.vue'
 import Portfolio from './components/Portfolio.vue'
+import Contact from './components/Contact.vue'
 import Footer from './components/Footer.vue'
 
 
@@ -39,6 +43,7 @@ export default {
     About,
     Skills,
     Portfolio,
+    Contact,
     Footer
 
   }
@@ -57,5 +62,6 @@ div {
 .about{margin-top:100px;}
 .skills{margin-top: 100px;}
 .portfolio{margin-top: 50px;}
+.contact{margin-top: 100px;}
 .footer{margin-top: 50px;}
 </style>

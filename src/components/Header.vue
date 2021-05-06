@@ -8,7 +8,7 @@
             <li><a href="#about" class="navbar-item">ABOUT</a></li>
             <li><a href="#skills" class="navbar-item">MY SKILLS</a></li>
             <li><a href="#portfolio" class="navbar-item">PORTFOLIO</a></li>
-            <li><a href="#contacts" class="navbar-item">CONTACTS</a></li>
+            <li><a href="#contact" class="navbar-item">CONTACTS</a></li>
         </div>
         <div class="social-media">
             <li><a href="#" class="fa fa-facebook"></a></li>

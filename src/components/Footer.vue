@@ -17,7 +17,7 @@
             data-ripple-color="light"
           >
             <img
-              src="../assets/book (1).jpg"
+              src="../assets/book (1).jpg" href="#portfolio"
               class="w-100"
             />
             <a href="#!">
@@ -34,7 +34,7 @@
             data-ripple-color="light"
           >
             <img
-              src="../assets/book (2).jpg"
+              src="../assets/book (2).jpg" href="#portfolio"
               class="w-100"
             />
             <a href="#!">
@@ -51,7 +51,7 @@
             data-ripple-color="light"
           >
             <img
-              src="../assets/book (3).jpg"
+              src="../assets/book (3).jpg" href="#portfolio"
               class="w-100"
             />
             <a href="#!">
@@ -68,7 +68,7 @@
             data-ripple-color="light"
           >
             <img
-              src="../assets/book (4).jpg"
+              src="../assets/book (4).jpg" href="#portfolio"
               class="w-100"
             />
             <a href="#!">
